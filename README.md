@@ -1,5 +1,6 @@
 - Install conda
 - Add conda in environment variables
-- Run this command conda create -p venv python==3.10
-- conda activate venv/
+- Run the below commands
+  - conda create -p venv python==3.10
+  - conda activate venv/
 - Create Google's API key for using Gemini
