@@ -4,3 +4,4 @@
   - conda create -p venv python==3.10
   - conda activate venv/
 - Create Google's API key for using Gemini
+- Run command "pip install -r requirements.txt"
