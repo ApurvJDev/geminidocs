@@ -1,3 +1,4 @@
 .env
 index.faiss
 index.pkl
+.venv/
