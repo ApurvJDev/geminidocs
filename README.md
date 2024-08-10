@@ -5,3 +5,4 @@
   - conda activate venv/
 - Create Google's API key for using Gemini
 - Run command "pip install -r requirements.txt"
+- pip install -U langchain-community
