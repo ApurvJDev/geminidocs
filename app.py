@@ -62,13 +62,13 @@ def user_input(user_question):
 
     response = chain({"input_documents":docs, "question":user_question}, return_only_outputs=True)
     print(response)
-    st.write("Reply: ", response["output.txt"])
+    st.write("Reply: ", response["output_text"])
 
 def main():
-    st.set_page_config("Chat PDF")
-    st.header("Chat with PDF using Gemini💁")
+    st.set_page_config("Design Response")
+    st.header("Design Response by Entering Document and Querying")
 
-    user_question = st.text_input("Ask a Question from the PDF Files")
+    user_question = st.text_input("Share the context from the documentations")
 
     if user_question:
         user_input(user_question)
