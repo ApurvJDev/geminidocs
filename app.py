@@ -82,3 +82,6 @@ def main():
                 text_chunks = get_text_chunks(raw_text)
                 get_vector_store(text_chunks)
                 st.success("Done")
+
+if __name__ == "__main__":
+    main()
