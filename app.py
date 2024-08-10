@@ -16,6 +16,7 @@ load_dotenv()
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
+# Extract Text from PDF
 def get_pdf_text(pdf_docs):
     text=""
     for pdf in pdf_docs:
@@ -23,4 +24,11 @@ def get_pdf_text(pdf_docs):
         for page in pdf_reader.pages:
             text += page.extract_text()
     return text
-    
+
+# Divide text into chunks
+def get_text_chunks(text):
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=10000, chunk_overlap=1000)
+    chunks = text_splitter.split_text(text)
+    return chunks
+
+# Convert chunks into vector embeddings
